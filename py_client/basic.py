@@ -6,7 +6,7 @@ get_response = requests.get(endpoint, json={"query": "Hello world!"}) # => This 
 
 # print(get_response.text) # Printing raw text response
 # print(get_response.status_code)
-print(get_response.json()['message'])
+print(get_response.json())
 
 # A Http request gives you a HTML response 
 # A REST API HTTP requests gives you a JSON response
