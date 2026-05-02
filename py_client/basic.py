@@ -2,13 +2,8 @@ import requests
 
 endpoint = "http://localhost:8000/api/"
 
-get_response = requests.get(endpoint, json={"query": "Hello world!"}) # => This an API (Application Programming Interface) => Http requests
+get_response = requests.post(endpoint, json={"title": "Mictlan PC","content": "PC Master Race", "price": "abc123"}) # => This an API (Application Programming Interface) => Http requests
 
-# print(get_response.headers)
-# print(get_response.text) # Printing raw text response
-# print(get_response.status_code)
 print(get_response.json())
 
-# A Http request gives you a HTML response 
-# A REST API HTTP requests gives you a JSON response
 
